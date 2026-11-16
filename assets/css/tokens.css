@@ -1,0 +1,67 @@
+/* Design tokens: colors, type, shadows. Light is the base; dark redefines tokens only. */
+:root {
+  --bg: #F3F6F7;
+  --bg-2: #E8EEF0;
+  --surface: #FFFFFF;
+  --surface-2: #F8FAFB;
+  --ink: #10222A;
+  --muted: #4B5F67;
+  --line: #D6DFE3;
+
+  --accent: #0B6B70;
+  --accent-2: #0E8A8F;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DDF0F0;
+  --gold: #B3862C;
+  --gold-ink: #1D1500;
+  --gold-soft: #F6EBCF;
+
+  --ok-fg: #1B6A38;  --ok-bg: #E2F3E8;
+  --warn-fg: #7A5200; --warn-bg: #FFF2D2;
+  --bad-fg: #9B2A2A; --bad-bg: #FBE4E4;
+
+  --footer-bg: #0A1A1F;
+  --footer-ink: #DCE9ED;
+  --footer-muted: #8FA6AE;
+  --footer-line: rgba(255, 255, 255, .1);
+
+  --shadow-sm: 0 1px 2px rgba(16, 34, 42, .06);
+  --shadow-md: 0 1px 2px rgba(16, 34, 42, .06), 0 10px 28px -8px rgba(16, 34, 42, .14);
+  --shadow-btn: 0 8px 18px -8px rgba(11, 107, 112, .75);
+
+  --radius: 16px;
+  --radius-sm: 12px;
+  --font-body: "Inter", "Noto Sans Bengali", "Hind Siliguri", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Source Serif 4", "Noto Serif Bengali", Georgia, "Noto Sans Bengali", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A1317; --bg-2: #0E1A1F; --surface: #111E24; --surface-2: #0E1A1F;
+    --ink: #E6EFF2; --muted: #9CB1B9; --line: #24353C;
+    --accent: #4FC6CA; --accent-2: #6FD6D9; --accent-ink: #05262A; --accent-soft: #11393C;
+    --gold: #E0B65A; --gold-ink: #1D1500; --gold-soft: #33290F;
+    --ok-fg: #78D494; --ok-bg: #12301E;
+    --warn-fg: #F2C14E; --warn-bg: #3A2D0C;
+    --bad-fg: #F29A9A; --bad-bg: #3A1818;
+    --footer-bg: #060E11; --footer-ink: #DCE9ED; --footer-muted: #8FA6AE;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .4);
+    --shadow-md: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 28px -8px rgba(0, 0, 0, .55);
+    --shadow-btn: 0 8px 18px -8px rgba(79, 198, 202, .5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0A1317; --bg-2: #0E1A1F; --surface: #111E24; --surface-2: #0E1A1F;
+  --ink: #E6EFF2; --muted: #9CB1B9; --line: #24353C;
+  --accent: #4FC6CA; --accent-2: #6FD6D9; --accent-ink: #05262A; --accent-soft: #11393C;
+  --gold: #E0B65A; --gold-ink: #1D1500; --gold-soft: #33290F;
+  --ok-fg: #78D494; --ok-bg: #12301E;
+  --warn-fg: #F2C14E; --warn-bg: #3A2D0C;
+  --bad-fg: #F29A9A; --bad-bg: #3A1818;
+  --footer-bg: #060E11; --footer-ink: #DCE9ED; --footer-muted: #8FA6AE;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .4);
+  --shadow-md: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 28px -8px rgba(0, 0, 0, .55);
+  --shadow-btn: 0 8px 18px -8px rgba(79, 198, 202, .5);
+  color-scheme: dark;
+}
